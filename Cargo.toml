@@ -7,7 +7,7 @@ edition = "2021"
 
 [dependencies]
 bevy = { version = "0.12.1"}
-bevy_xpbd_3d = "0.3.2"
+service = {path="./service"}
 
 # Enable a small amount of optimization in debug mode
 [profile.dev]
@@ -19,4 +19,4 @@ opt-level = 3
 
 [workspace]
 resolver = "2"
-members = ["."]
+members = [".", "core", "service"]
